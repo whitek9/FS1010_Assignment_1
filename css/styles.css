@@ -6,10 +6,111 @@ body {
     background-color: #d5d5d5
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: .75em;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1em;
+    color: #535353;
+    margin-top: 0;
+    margin-bottom: .75em;
+}
+
 .bold {
     font-weight: bold;
 }
 
 .defaultContainer {
-    background-color: #e7e7e7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1200px;
+    align-content: center;
+    padding: 100px;
+    padding-bottom: 0%;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageGallery {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: inherit;
+}
+
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.galleryImage {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.galleryImageOverlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left, #ffffff1a 0%, #ffffff26 50%, #000000 50%);
+    color: white;
+}
+
+img:hover + .galleryImageOverlay {
+    display: block;
+}
+
+.overlayText {
+    padding: 10%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+}
+footer ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.copyright {
+    color: #413c3c;
+    margin: 0;
+    align-self: center;
 }
