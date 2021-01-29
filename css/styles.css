@@ -1,0 +1,15 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #d5d5d5
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.defaultContainer {
+    background-color: #e7e7e7;
+}
