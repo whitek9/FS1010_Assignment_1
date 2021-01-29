@@ -42,7 +42,7 @@ h2 {
     flex-direction: column;
 }
 
-.imageGallery {
+.galleryContainer {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -58,6 +58,23 @@ h2 {
 
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clickableIcon {
+    font-size: 2.5em;
+    line-height: 1em;
+    transition: .3s ease-out;
+}
+
+.clickableIcon:hover {
+    color: white;
 }
 
 .galleryImage {
@@ -69,22 +86,30 @@ img {
 }
 
 .galleryImageOverlay {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top left, #ffffff1a 0%, #ffffff26 50%, #000000 50%);
-    color: white;
+    background: linear-gradient(to top left,#ffffff00 50%, #ffffffa2 50%);
+    transition: .5s ease;
 }
 
-img:hover + .galleryImageOverlay {
-    display: block;
+.galleryImage:hover .galleryImageOverlay {
+    opacity: 1;
 }
 
 .overlayText {
-    padding: 10%;
+    color: black;
+    padding-left: 10%;
+    padding-top: 5%;
+    max-width: 50%;
+    font-size: 1em;   
+}
+
+.boldText {
+    font-weight: bold;
 }
 
 footer {
@@ -102,12 +127,11 @@ footer ul li {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 20px;
 }
 footer ul li a {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 .copyright {
     color: #413c3c;
