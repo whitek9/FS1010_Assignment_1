@@ -31,7 +31,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 1200px;
+    max-width: 1200px; 
     align-content: center;
     padding: 100px;
     padding-bottom: 0%;
